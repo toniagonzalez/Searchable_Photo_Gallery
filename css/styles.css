@@ -1,0 +1,111 @@
+/*---------Browser formatting for Firefox-----*/
+.border {
+  width: 100%;
+}
+
+/*------------Main Styles----------*/
+
+body {
+  box-sizing: border-box;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+
+.header {
+  width: 100%;
+  height: 150px;
+  background-color: black;
+}
+
+main {
+  margin-left: 12%;
+  padding-top: 40px;
+}
+
+.bar {
+    position: relative;
+    width: 85%;
+    height: 2em;
+    margin-left: 5%;
+    margin-top: 1.5em;
+    padding-left: 1em;
+}
+
+.photo {
+  width: 85%;
+  height: auto;
+  box-sizing: border-box;
+  margin-top: .75em;
+  margin-right: .75em;
+  box-shadow: 4px 5px 10px gray;
+}
+
+.message {
+  color: gray;
+  text-align: center;
+}
+
+/*------------Media Queries--------------*/
+
+@media (min-width: 500px) { /*---------500px*/
+  main {
+    margin-left: 5%;
+  }
+
+  .bar {
+    width: 60%;
+    height: 2em;
+    margin-left: 15%;
+    margin-top: 2em;
+  }
+
+  .photo {
+    width: 45%;
+    height: 200px;
+    margin-top: .75em;
+    margin-right: .75em;
+  }
+
+}
+
+
+@media (min-width: 768px) { /*---------768px*/
+  main {
+    margin-left: 4%;
+  }
+
+  .photo {
+    width: 30%;
+    height: 200px;
+  }
+
+}
+
+
+@media (min-width: 900px) { /*---------900px*/
+  .header {
+    height: 170px;
+  }
+
+  .bar {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 2em;
+  }
+
+  main {
+    margin-left: 5%;
+  }
+
+  .photo {
+    width: 22%;
+    height: 200px;
+  }
+
+}
